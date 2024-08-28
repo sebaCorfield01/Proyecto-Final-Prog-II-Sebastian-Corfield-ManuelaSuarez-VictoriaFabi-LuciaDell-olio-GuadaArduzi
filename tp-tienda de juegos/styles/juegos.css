@@ -11,15 +11,16 @@ html, body {
     background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
 }
 
-.imagen-header {
-    width: 100%;
-    height: 250px;
-    display: block;
+video {
+    width: 1400px;
+    
+    
+   
 }
 
 .nav-header {
    display: flex;
-    background-color: #1d1d1d;
+    background-color: #3a1818;
    justify-content: center;
 }
 
@@ -83,15 +84,16 @@ section {
     width: 20%;
     height: 700px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: rgb(90, 19, 19);
    
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 #button-generos {
+    color: beige;
     list-style-type: none;
-    background-color: white;
+    background-color: #333;
     border-radius: 20px;
     margin-top: 5px;
     margin-right: 10px;
