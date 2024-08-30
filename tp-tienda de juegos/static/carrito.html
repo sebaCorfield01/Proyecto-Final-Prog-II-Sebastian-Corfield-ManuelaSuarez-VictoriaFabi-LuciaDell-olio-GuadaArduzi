@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Carrito</title>
 </head>
 <body>
     <header>
-        <div class="div-header" ><img src="../jostyc.jpg" alt="" class="imagen-header"></div>
         <nav class="nav-header">
             <ul>
                 <li><a href="#">inicio</a></li>
@@ -24,35 +24,52 @@
         </nav>
     </header>
     <main>
-        <section class="vaciar_carrito">
-            <button type="reset">Vaciar Carrito</button>
-        </section>
-        <section class="producto_carrito">
-            <img src="..." alt="imagen-juego">
-            <h4 class="nombre-prod_carrito">titulo juego</h4>
-            <div class="boton-cantidad_carrito">
-                <button class="menos-mas_carrito">-</button><span class="cantidad-articulo_carrito">1</span><button class="menos-mas_carrito">+</button>
+        <section class="heading">
+            <div class="heading-div">
+                <h2>Carrito</h2>
+                <p>3 items</p>
             </div>
-            <p class="precio-articulo_carrito">precio juego</p>
+            <button type="reset" class="empty-button">Vaciar Carrito</button>
         </section>
-        <section class="envio_carrito">
-            <h4 class="titulo-envio_carrito">Envío</h4>
-            <input class="ubicacion_carrito" placeholder="Dirección" type="search" name="barra-busqueda"/>
-            <input class="ubicacion_carrito" placeholder="Código postal" type="search" name="barra-busqueda"/>
-            <p class="precio-envio_carrito">precio envio</p>
-        </section>
-        <section class="pago_carrito">
-            <h4 class="titulo-pago_carrito">Forma de pago</h4>
-            <div class="metodo-pago_carrito"><input type="radio" name="formaPago" id="credito">T. crédito</div>
-            <div class="metodo-pago_carrito"><input type="radio" name="formaPago" id="debito">T. débito</div>
-            <div class="metodo-pago_carrito"><input type="radio" name="formaPago" id="transferencia">Transferencia</div>
-        </section>
-        <section class="total_carrito">
-            <h4 class="titulo-total_carrito">Total:</h4>
-            <h4 class="titulo-total_carrito">precio total</h4>
-        </section>
-        <section class="pagar_carrito">
-            <button type="submit">Pagar</button>
+        <section class="resume">
+            <div class="resume-products">
+                <div class="product-card">
+                    <img src="" alt="">
+                    <h4>Nombre juego</h4>
+                    <h4>$</h4>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="product-card">
+                    <img src="" alt="">
+                    <h4>Nombre juego</h4>
+                    <h4>$</h4>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="product-card">
+                    <img src="" alt="">
+                    <h4>Nombre juego</h4>
+                    <h4>$</h4>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="resume-payment">
+                <h4>Resumen de compra</h4>
+                <div class="resume-payment-summary">
+                    <div>
+                        <p>Subtotal</p>
+                        <p>Impuestos</p>
+                        <h5>Total</h5>
+                    </div>
+                    <div>
+                        <p>$30.00</p>
+                        <p>$3.00</p>
+                        <h5>$33.00</h5>
+                    </div>
+                </div>
+                <div class="resume-payment-button">
+                    <button type="submit">Ir a pagar...<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
