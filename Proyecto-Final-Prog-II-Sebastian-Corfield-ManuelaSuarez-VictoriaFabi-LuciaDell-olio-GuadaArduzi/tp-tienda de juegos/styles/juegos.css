@@ -1,0 +1,170 @@
+* {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 20px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
+}
+
+video {
+    width: 1400px;
+    
+    
+   
+}
+
+.nav-header {
+   display: flex;
+    background-color: #3a1818;
+   justify-content: center;
+}
+
+.ul-juegos #li-juegos {
+    list-style-type: none;
+    display: inline;
+    
+    
+}
+i:hover{
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition: 200ms;
+    color: white;
+    padding: 20px 25px 21px 25px;
+    background-color: gray;
+}
+
+#li-juegos {
+    padding: 20px;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #111;
+  }
+  
+  /* Mostrar el contenido desplegable cuando se pasa el ratón por encima del botón */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+i{
+    float: right;
+}
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+}
+
+section {
+    width: 20%;
+    height: 700px;
+    border-radius: 10px;
+    background-color: rgb(90, 19, 19);
+   
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#button-generos {
+    color: beige;
+    list-style-type: none;
+    background-color: #333;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+section::-webkit-scrollbar {
+    width: 12px; /* Ancho del scroll vertical */
+}
+
+
+ section::-webkit-scrollbar-thumb {
+    color: black;
+    background-color: #333; /* Color del pulgar */
+    border-radius: 10px; /* Redondeo de los bordes */
+    border: 3px solid #333; /* Borde alrededor del pulgar */
+}
+    
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+
+main {
+    width: 80%;
+    padding-left: 20px; 
+}
+
+#div-conteiner-juegos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
+    
+
+  
+   
+}
+#imagen-juegos{
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    object-fit:cover;
+    
+}
+
+#div-juegos{
+   
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 180px;
+    background-color: black;
+    margin-left: 30px;
+    
+}
+
+#p-juegos{
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
