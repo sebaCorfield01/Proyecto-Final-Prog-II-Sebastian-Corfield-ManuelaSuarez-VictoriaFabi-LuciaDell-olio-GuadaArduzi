@@ -10,7 +10,7 @@ html, body {
     height: 100%;
 }
 
-main {
+body {
     background: radial-gradient(rgb(157, 8, 8), rgb(68, 5, 5));
 }
 
