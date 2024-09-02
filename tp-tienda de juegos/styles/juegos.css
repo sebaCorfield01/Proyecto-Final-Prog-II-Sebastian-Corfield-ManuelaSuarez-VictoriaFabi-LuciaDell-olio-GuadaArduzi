@@ -18,60 +18,44 @@ video {
    
 }
 
-.nav-header {
+#nav-header {
    display: flex;
     background-color: #3a1818;
    justify-content: center;
 }
 
-.ul-juegos #li-juegos {
+#ul-juegos .li-juegos {
     list-style-type: none;
     display: inline;
     
     
 }
+i{
+    color: white;
+}
 i:hover{
     cursor: pointer;
 }
-a {
+a{
     text-decoration: none;
+}
+.link-navegador {
+    
     color: black;
 }
 
-a:hover {
+.link-navegador:hover {
     transition: 200ms;
     color: white;
     padding: 20px 25px 21px 25px;
     background-color: gray;
 }
 
-#li-juegos {
+.li-juegos {
     padding: 20px;
     
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #111;
-  }
-  
-  /* Mostrar el contenido desplegable cuando se pasa el ratón por encima del botón */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
 i{
     float: right;
 }
@@ -90,7 +74,7 @@ section {
     overflow-x: hidden;
 }
 
-#button-generos {
+.button-generos {
     color: beige;
     list-style-type: none;
     background-color: #333;
@@ -133,18 +117,14 @@ main {
     padding-left: 20px; 
 }
 
-#div-conteiner-juegos{
+.div-conteiner-juegos{
     display: flex;
     flex-direction: row;
     width: 100%;
     
-    
-    
-
-  
    
 }
-#imagen-juegos{
+.imagen-juegos{
     width: 140px;
     height: 140px;
     padding: 20px;
@@ -152,8 +132,10 @@ main {
     
 }
 
-#div-juegos{
-   
+.div-juegos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-top: 20px;
     border-radius: 10px;
     width: 180px;
@@ -162,9 +144,10 @@ main {
     
 }
 
-#p-juegos{
+.p-juegos{
     color: white;
     margin-top: 10px;
     margin-left: 10px;
+    width: 150px;
 }
 

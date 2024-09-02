@@ -11,23 +11,19 @@
 
 <body>
     <header>
-      <div class="div-header" > <video autoplay loop muted playsinline>
+      <div id="div-header" > <video autoplay loop muted playsinline>
         <source src="../asset/video/Still Here   Season 2024 Cinematic - League of Legends (ft. Forts, Tiffany Aris, and 2WEI).mp4" type="video/mp4">
         Tu navegador no soporta video HTML5.
       </video></div>
-      <nav class="nav-header">
-          <ul class="ul-juegos">
-              <li id="li-juegos"><a href="../index.html">inicio</a></li>
-              <li id="li-juegos"><a href="#">juegos ▼</a>
-            <div class="dropdown-content">
-              <a href="#">inicio</a>
-              <a href="#">recomendaciones</a>
-              <a href="#">discuciones</a>
-            </div></li>
-              <li id="li-juegos"><a href="recomendaciones.html">recomendaciones</a></li>
-              <li id="li-juegos"><a href="oferta.html">oferta</a></li>
-              <li id="li-juegos"><a href="contacto.html">contacto</a></li>
-              <li id="li-juegos"><i class="fas fa-shopping-cart"></i></li>
+      <nav id="nav-header">
+          <ul id="ul-juegos">
+              <li class="li-juegos"><a href="../index.html" class="link-navegador">inicio</a></li>
+              <li class="li-juegos"><a href="#" class="link-navegador">juegos ▼</a>
+            </li>
+              <li class="li-juegos"><a href="recomendaciones.html" class="link-navegador">recomendaciones</a></li>
+              <li class="li-juegos"><a href="oferta.html" class="link-navegador">oferta</a></li>
+              <li class="li-juegos"><a href="contacto.html" class="link-navegador">contacto</a></li>
+            
           </ul>
      
     </nav>
@@ -40,80 +36,84 @@
       <section>
         <h2>generos</h2>
         <ul>
-            <button id="button-generos">Acción</button>
-            <button id="button-generos">Aventura</button>
-            <button id="button-generos">Rol (RPG)</button>
-            <button id="button-generos">Estrategia</button>
-            <button id="button-generos">Simulación</button>
-            <button id="button-generos">Deportes</button>
-            <button id="button-generos">Carreras</button>
-            <button id="button-generos">Plataformas</button>
-            <button id="button-generos">Lucha</button>
-            <button id="button-generos">Terror</button>
-            <button id="button-generos">Disparos en primera persona (FPS)</button>
-            <button id="button-generos">Disparos en tercera persona (TPS)</button>
-            <button id="button-generos">Puzles</button>
-            <button id="button-generos">Arcade</button>
-            <button id="button-generos">Aventura gráfica</button>
-            <button id="button-generos">Survival</button>
-            <button id="button-generos">Metroidvania</button>
-            <button id="button-generos">Sandbox</button>
-            <button id="button-generos">Battle Royale</button>
-            <button id="button-generos">Mundo abierto</button>
-            <button id="button-generos">Música y ritmo</button>
+            <button class="button-generos">Acción</button>
+            <button class="button-generos">Aventura</button>
+            <button class="button-generos">Rol (RPG)</button>
+            <button class="button-generos">Estrategia</button>
+            <button class="button-generos">Simulación</button>
+            <button class="button-generos">Deportes</button>
+            <button class="button-generos">Carreras</button>
+            <button class="button-generos">Plataformas</button>
+            <button class="button-generos">Lucha</button>
+            <button class="button-generos">Terror</button>
+            <button class="button-generos">Disparos en primera persona (FPS)</button>
+            <button class="button-generos">Disparos en tercera persona (TPS)</button>
+            <button class="button-generos">Puzles</button>
+            <button class="button-generos">Arcade</button>
+            <button class="button-generos">Aventura gráfica</button>
+            <button class="button-generos">Survival</button>
+            <button class="button-generos">Metroidvania</button>
+            <button class="button-generos">Sandbox</button>
+            <button class="button-generos">Battle Royale</button>
+            <button class="button-generos">Mundo abierto</button>
+            <button class="button-generos">Música y ritmo</button>
         </ul>
       </section>
       
       <main>
-        <div id="div-conteiner-juegos"> 
-            <div id="div-juegos">
-                <img src="https://assets.xboxservices.com/assets/71/b5/71b50f29-5799-4be1-97ef-d58d57c9fe37.jpg?n=CoD-Modern-Warfare-III_GLP-Page-Hero-0_1083x1222_02.jpg" alt="" id="imagen-juegos">
-                <p id="p-juegos">Call Of Duty MW3</p>
-                <p id="p-juegos">23000$</p>
+        <div class="div-conteiner-juegos"> 
+            <div class="div-juegos">
+                <img src="https://assets.xboxservices.com/assets/71/b5/71b50f29-5799-4be1-97ef-d58d57c9fe37.jpg?n=CoD-Modern-Warfare-III_GLP-Page-Hero-0_1083x1222_02.jpg" alt="" class="imagen-juegos">
+                <p class="p-juegos">Call Of Duty MW3</p>
+                <p class="p-juegos">$69.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>           </div>
+            <div class="div-juegos">
+                <img src="https://i.blogs.es/dfbccc/trucosgtavps4/1366_2000.jpg" alt="" class="imagen-juegos">
+                <p class="p-juegos">GTA 5</p>
+                <p class="p-juegos">$14.80 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
+                
             </div>
-            <div id="div-juegos">
-                <img src="https://i.blogs.es/dfbccc/trucosgtavps4/1366_2000.jpg" alt="" id="imagen-juegos">
-                <p id="p-juegos">GTA 5</p>
-                <p id="p-juegos">23000$</p>
-            </div>
-            <div id="div-juegos">
-                <img src="https://multitap.com.ar/wp-content/uploads/2022/01/thumb-1920-1168382.jpg" alt="" id="imagen-juegos">
-                <p id="p-juegos">Forza Horizon 5</p>
-                <p id="p-juegos">23000$</p>
-            </div>
-            <div id="div-juegos">
-                <img src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/common/pitch-notes-assets/eas-fifa23-gen5-se-km-keyart-horz-rgb30.jpg" alt="" id="imagen-juegos">
-                <p id="p-juegos">Fifa 23</p>
-                <p id="p-juegos">23000$</p>
-            </div>
-            <div id="div-juegos">
-                <img src="https://store-images.s-microsoft.com/image/apps.1392.67660042887481018.7de2bfcd-48ef-4a6c-bba4-e65d208d67ec.d712d519-5ad0-4aac-9271-ad4424fd3702" alt="" id="imagen-juegos">
-                <p id="p-juegos">Battlefield 4</p>
+            <div class="div-juegos">
+                <img src="https://multitap.com.ar/wp-content/uploads/2022/01/thumb-1920-1168382.jpg" alt="" class="imagen-juegos">
+                <p class="p-juegos">Forza Horizon 5</p>
+                <p class="p-juegos">$32.78 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>           </div>
+            <div class="div-juegos">
+                <img src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/common/pitch-notes-assets/eas-fifa23-gen5-se-km-keyart-horz-rgb30.jpg" alt="" class="imagen-juegos">
+                <p class="p-juegos">Fifa 23</p>
+                <p class="p-juegos">$69.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>         </div>
+            <div class="div-juegos">
+                <img src="https://store-images.s-microsoft.com/image/apps.1392.67660042887481018.7de2bfcd-48ef-4a6c-bba4-e65d208d67ec.d712d519-5ad0-4aac-9271-ad4424fd3702" alt="" class="imagen-juegos">
+                <p class="p-juegos">Battlefield 4</p>
+                <p class="p-juegos">$39.49 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
 
            
             
         </div>
-        <div id="div-conteiner-juegos">
-             <div id="div-juegos">
-                <img src="https://store-images.s-microsoft.com/image/apps.31281.64256825846959382.44b5bc43-437a-4414-83ca-b41ba9e7764a.86abb8aa-f419-4a90-b6aa-cf79b4228f06" alt="" id="imagen-juegos">
-                <p id="p-juegos">Star Wars Battlefront 2</p>
+        <div class="div-conteiner-juegos">
+             <div class="div-juegos">
+                <img src="https://store-images.s-microsoft.com/image/apps.31281.64256825846959382.44b5bc43-437a-4414-83ca-b41ba9e7764a.86abb8aa-f419-4a90-b6aa-cf79b4228f06" alt="" class="imagen-juegos">
+                <p class="p-juegos">Star Wars Battlefront 2</p>
+                <p class="p-juegos">$39.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
-            <div id="div-juegos">
-                <img src="https://image.api.playstation.com/vulcan/img/rnd/202111/3019/UFWpBFaIBpTJCAUhq3Cu0Z2O.png" alt="" id="imagen-juegos">
-                <p id="p-juegos">Sims 4</p>
+            <div class="div-juegos">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202111/3019/UFWpBFaIBpTJCAUhq3Cu0Z2O.png" alt="" class="imagen-juegos">
+                <p class="p-juegos">Sims 4</p>
+                <p class="p-juegos">$39.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
-            <div id="div-juegos">
-                <img src="https://image.api.playstation.com/cdn/UP1822/CUSA13632_00/GuFQKWlrIVODEA1su20fCOrNZEYX5CB9.png" alt="" id="imagen-juegos">
-                <p id="p-juegos">Hollow Knight</p>
+            <div class="div-juegos">
+                <img src="https://image.api.playstation.com/cdn/UP1822/CUSA13632_00/GuFQKWlrIVODEA1su20fCOrNZEYX5CB9.png" alt="" class="imagen-juegos">
+                <p class="p-juegos">Hollow Knight</p>
+                <p class="p-juegos">$4.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
-            <div id="div-juegos">
-                <img src="https://cdn1.epicgames.com/dbf5337d024e457bac68f2059112da86/offer/EGS_TheBindingofIsaacRepentance_NicalisIncEdmundMcmillen_S2-1200x1600-eb480826546ffb2ed1560ceec262b615.jpg" alt="" id="imagen-juegos">
-                <p id="p-juegos">The Binding of Isaac Reptance</p>
+            <div class="div-juegos">
+                <img src="https://cdn1.epicgames.com/dbf5337d024e457bac68f2059112da86/offer/EGS_TheBindingofIsaacRepentance_NicalisIncEdmundMcmillen_S2-1200x1600-eb480826546ffb2ed1560ceec262b615.jpg" alt="" class="imagen-juegos">
+                <p class="p-juegos">The Binding of Isaac Reptance</p>
+                <p class="p-juegos">50.60 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
-            <div id="div-juegos">
-                <img src="https://image.api.playstation.com/cdn/UP2113/CUSA06623_00/5vXtP0O5fmnnyrNnWAinTz57d04szG3b.png" alt="" id="imagen-juegos">
-                <p id="p-juegos">Outlast</p>
+            <div class="div-juegos">
+                <img src="https://image.api.playstation.com/cdn/UP2113/CUSA06623_00/5vXtP0O5fmnnyrNnWAinTz57d04szG3b.png" alt="" class="imagen-juegos">
+                <p class="p-juegos">Outlast 2</p>
+                <p class="p-juegos">$14.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
             </div>
 
 

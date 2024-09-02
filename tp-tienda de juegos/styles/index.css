@@ -12,7 +12,21 @@
     background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
   }
 
+/*<<<<<<< guada*/
   .nav-header {
+/*=======*/
+body {
+    background: radial-gradient(rgb(157, 8, 8), rgb(68, 5, 5));
+}
+
+.imagen-header {
+    width: 100%;
+    height: 250px;
+    display: block; 
+}
+
+.nav-header {
+/*>>>>>>> main*/
     display: flex;
     background-color: rgb(39, 16, 16);
     justify-content: center;
