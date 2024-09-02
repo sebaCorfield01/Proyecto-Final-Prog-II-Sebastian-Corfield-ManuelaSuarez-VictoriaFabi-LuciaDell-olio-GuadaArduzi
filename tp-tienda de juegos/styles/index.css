@@ -1,15 +1,20 @@
 * {
     font-family: "New Amsterdam", sans-serif;
     font-size: 20px;
-}
+  }
 
-html, body {
+  html,
+  body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-}
+    background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
+  }
 
+/*<<<<<<< guada*/
+  .nav-header {
+/*=======*/
 body {
     background: radial-gradient(rgb(157, 8, 8), rgb(68, 5, 5));
 }
@@ -21,34 +26,27 @@ body {
 }
 
 .nav-header {
+/*>>>>>>> main*/
     display: flex;
-    background-color: red;
+    background-color: rgb(39, 16, 16);
     justify-content: center;
-}
+  }
 
-ul li {
-    
+  ul li {
     list-style-type: none;
-    display:  inline;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    transition: 200ms;
-    color: white;
-    padding: 20px 25px 21px 25px;
-    background-color: gray;
-}
-
-li {
+    display: inline;
     padding: 20px;
-}
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+  }
 
-.div-aside {
-    display: flex;
-    flex-direction: row;
-}
+  a:hover {
+    transition: 200ms;
+    color: rgb(255, 255, 255);
+    padding: 20px 25px 21px 25px;
+    background-color: rgb(50, 30, 30);
+  }
+  
