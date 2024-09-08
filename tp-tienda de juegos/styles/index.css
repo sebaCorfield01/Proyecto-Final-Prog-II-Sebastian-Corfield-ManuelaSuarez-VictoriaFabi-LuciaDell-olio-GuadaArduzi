@@ -1,5 +1,5 @@
 * {
-    font-family: "New Amsterdam", sans-serif;
+    font-family:"DM Sans", sans-serif;
     font-size: 20px;
   }
 
@@ -9,45 +9,163 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
+    background: linear-gradient( to left,rgb(53, 4, 4), rgb(27, 13, 13));
   }
 
-/*<<<<<<< guada*/
+
+
+  /* NAV */
   .nav-header {
-/*=======*/
-body {
-    background: radial-gradient(rgb(157, 8, 8), rgb(68, 5, 5));
-}
-
-.imagen-header {
-    width: 100%;
-    height: 250px;
-    display: block; 
-}
-
-.nav-header {
-/*>>>>>>> main*/
-    display: flex;
-    background-color: rgb(39, 16, 16);
-    justify-content: center;
+    display:flex;
+    background-color: rgb(38, 19, 19, 0.5); /*0.9 baja opacidad*/
+    justify-content: flex-start;
+    position: sticky;
   }
 
-  ul li {
+  .logo img{
+  position: relative;
+  top: 15px;
+  padding-left: 25px;
+
+  }
+
+   ul li {
+
+    position: relative ;
+    right: 9px;
     list-style-type: none;
     display: inline;
-    padding: 20px;
+    padding: 15px;
   }
   
   a {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 23px;
     text-decoration: none;
-    color: rgb(182, 182, 182);
+    color: rgb(232, 232, 232);
   }
 
-  a:hover {
+/*Aplica hover solo en las opciones(no al logo)*/
+
+  .nav-op a:hover { 
     transition: 200ms;
-    color: rgb(255, 255, 255);
-    padding: 20px 25px 21px 25px;
-    background-color: rgb(50, 30, 30);
+    color: rgb(118, 27, 27);
   }
+
+  .login button{
+    font-family: "New Amsterdam", sans-serif;
+    position: relative;
+    top: 15px;
+    left: 760px;
+    font-size: 19px;
+    padding: 6px 20px;
+    border: 0px;
+    border-radius: 20px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 16, 16);
+
+  }
+
+  /* .login a:hover{
+
+  } */
+
   
   
+  /* MAIN */
+  main{
+    min-height: 100vh
+  }
+
+  .destacado{
+    margin: 130px;
+    background-color: rgba(24, 3, 3, 0.7);
+    padding: 50px ;
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .titulo h1{
+    font-size: 40px;
+    color: rgb(213, 213, 213);
+  }
+
+  .carrusel{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+
+  }
+
+
+  .arrow-izq{
+    font-size: 60px;
+    color: rgb(182, 182, 182);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .arrow-drc{
+    font-size: 60px;
+    color: rgb(182, 182, 182);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+
+/* SOBRE NOSOTROS */
+  #nosotros{
+    margin: 130px;
+    padding: 40px;
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(44, 34, 32);
+    }
+
+  h1{
+    font-size: 40px;
+    color: rgb(213, 213, 213);
+  }
+
+p{
+  color: aliceblue;
+}
+
+  /* FOOTER */
+
+  footer{
+    background-color: rgb(27, 13, 13, 0.7);
+    height: 100%;
+    max-height: 250px;
+    display: grid;
+
+  }
+
+  .footer-redes{
+    color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  i{
+    margin: 20px;
+    font-size: 23px;
+  }
+  h3{
+    color: rgb(235, 235, 235);
+    font-family:"DM Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-derechos p{
+    border-top: 1px solid rgb(113, 92, 92);
+    border-bottom: 1px solid rgb(113, 92, 92);
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(113, 92, 92);
+    font-size: 15px;
+  } 
