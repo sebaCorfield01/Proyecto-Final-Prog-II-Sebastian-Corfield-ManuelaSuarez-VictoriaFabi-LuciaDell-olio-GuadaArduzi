@@ -8,19 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="icon" href="../asset/image/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>Carrito</title>
+    <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
+    <title>Carrito | Game4</title>
 </head>
 <body>
     <header>
         <nav class="nav-header">
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="juegos.html">juegos</a></li>
-                <li><a href="recomendaciones.html">recomendaciones</a></li>
-                <li><a href="oferta.html">oferta</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
+            <div class="logo">
+                <a href="#">
+                    <img src="../asset/image/logo.png" width="38px">
+                </a>                    
+            </div>
+            <div class="nav-op">
+                <ul>
+                    <li><a href="./static/juegos.html">juegos</a></li>
+                    <li><a href="./static/ofertas.html">ofertas</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="./static/contacto.html">contacto</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="./static/login.html"><button>Iniciar sesion</button></a>
+            </div>
         </nav>
     </header>
     <main>
@@ -34,21 +45,27 @@
         <section class="resume">
             <div class="resume-products">
                 <div class="product-card">
-                    <img src="" alt="">
-                    <h4>Nombre juego</h4>
-                    <h4>$</h4>
+                    <img src="../asset/image/sims4.jpg" alt="The Sims 4">
+                    <div>
+                        <h4 class="game-name">The Sims 4</h4>
+                        <h4 class="game-price">$1000</h4>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="product-card">
+                    <img src="../asset/image/rocketleague.jpg" alt="">
+                    <div>
+                        <h4 class="game-name">The Sims 4</h4>
+                        <h4 class="game-price">$1000</h4>
+                    </div>
                     <i class="fas fa-times"></i>
                 </div>
                 <div class="product-card">
                     <img src="" alt="">
-                    <h4>Nombre juego</h4>
-                    <h4>$</h4>
-                    <i class="fas fa-times"></i>
-                </div>
-                <div class="product-card">
-                    <img src="" alt="">
-                    <h4>Nombre juego</h4>
-                    <h4>$</h4>
+                    <div>
+                        <h4 class="game-name">The Sims 4</h4>
+                        <h4 class="game-price">$1000</h4>
+                    </div>
                     <i class="fas fa-times"></i>
                 </div>
             </div>
@@ -73,7 +90,16 @@
         </section>
     </main>
     <footer>
-        
+        <div class="footer-redes">
+            <h3>¡Seguinos en nuestras redes!</h3>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="footer-derechos">
+            <p align="center">© 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países. <br> Todos los precios incluyen IVA (donde sea aplicable).</p>
+        </div>
     </footer>
 </body>
 </html>
