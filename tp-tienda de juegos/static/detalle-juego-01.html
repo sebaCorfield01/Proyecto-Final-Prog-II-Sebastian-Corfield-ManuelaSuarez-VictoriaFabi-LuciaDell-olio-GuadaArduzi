@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href=".\asset\image\logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles\detalle-juego-01.css">
+    <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
+    <title>Inicio| Game4</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+
+        <div class="logo">
+            <a href="#">
+                 <img src="..\asset\image\logo.png" width="38px">
+            </a>                    
+        </div>
+
+        <div class="nav-op">
+            <ul>
+            
+                <li><a href="../static/juegos.html">juegos</a></li>
+                <li><a href="../static/ofertas.html">ofertas</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="../static/contacto.html">contacto</a></li>
+
+            </ul>
+        </div>  
+
+        <div class="login">
+                <a href="./static/login.html">
+                 <button>Iniciar sesion</button></a>
+        </div>
+        </nav>
+    </header>
+
+    <!--Empieza el detalle-->
+    <main>
+        <div class="container">
+            <div class="game-details">
+                <div class="game-image">
+                    <img src="https://assets.xboxservices.com/assets/71/b5/71b50f29-5799-4be1-97ef-d58d57c9fe37.jpg?n=CoD-Modern-Warfare-III_GLP-Page-Hero-0_1083x1222_02.jpg" alt="Call Of Duty MW3">
+                </div>
+                <div class="game-info">
+                    <h1>Call Of Duty MW3</h1>
+                    <p class="description">
+                        Call of Duty es una saga de videojuegos tipo FPS cuyo propietario actual es Activision que actualmente cuenta con un total de 43 juegos para PS5, Xbox Series X/S, Xbox One, PS4, Wii U, PSVITA, Android, iPhone, NDS, PSP, PS3, Wii, Xbox 360, Xbox, GameCube, PS2, N-Gage y PC.
+                        <br><br>
+                        Esta saga nació en 2003 de la mano de Infinity Ward que con su primera obra quiso crear un sucesor espiritual de Medal of Honor: Allied Assault ofreciendo desde ese momento una licencia de juegos de disparos de corte bélico ambientada en diferentes épocas históricas e incluso en el futuro, destacando habitualmente por campañas espectaculares y por modos multijugador adictivos en la mayoría de sus entregas.
+                        
+                    </p>
+                  
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/1xjCdN_rWCE" title="Call of Duty MW3 Trailer"></iframe>
+            </div>
+           
+            <h2>Requisitos del Sistema</h2>
+            <div class="requirements">
+                <ul>
+                    <li><strong>Sistema Operativo:</strong> Windows 10 64-bit</li>
+                    <li><strong>Procesador:</strong> Intel Core i5-2500K / AMD Ryzen 5 1600X</li>
+                    <li><strong>Memoria:</strong> 12 GB de RAM</li>
+                    <li><strong>Gráfica:</strong> NVIDIA GeForce GTX 970 / AMD Radeon R9 390</li>
+                    <li><strong>DirectX:</strong> Versión 12</li>
+                    <li><strong>Almacenamiento:</strong> 70 GB de espacio disponible</li>
+                </ul>
+            </div>
+            <section class="user-reviews">
+                <form action="/submit-review" method="POST">
+                    <label for="user-review">Deja tu opinión:</label><br>
+                    <textarea id="user-review" name="review" rows="4" cols="50"></textarea><br>
+                    <label for="rating">Calificación:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+    </main>
+    
+<!--footer comun-->
+
+<footer>
+
+    <div class="footer-redes">
+        <h3>¡Seguinos en nuestras redes!</h3>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="footer-derechos">
+
+    <p align="center">
+    © 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países. <br> Todos los precios incluyen IVA (donde sea aplicable).  
+    </p>
+    </div>
+
+
+</footer>
+</body>
+</html>
