@@ -28,13 +28,6 @@
   let currentIndex = 0;
   const sliderImage = document.getElementById('slider-image');
   
-  // function changeImage() {
-  //   currentIndex = (currentIndex + 1) % images.length;
-  //   sliderImage.src = images[currentIndex];
-  // }
-  
-  // setInterval(changeImage, 4000);
-  
   
   const comentarios = document.querySelector(".comments-container");
   comentarios.addEventListener("mouseover", () => {
