@@ -2,7 +2,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background: linear-gradient(to left,rgb(53, 4, 4), rgb(27, 13, 13));;
     background-size: cover;
     box-sizing: border-box;
     margin: auto 50px;
