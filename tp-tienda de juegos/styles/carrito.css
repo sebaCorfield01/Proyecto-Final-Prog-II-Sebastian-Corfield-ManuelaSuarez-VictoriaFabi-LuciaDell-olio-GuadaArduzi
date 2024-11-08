@@ -86,10 +86,11 @@ h2 {
 .empty-button {
     border: 0;
     border-radius: 6px;
-    transition: 0.5s;
+    transition: 200ms;
 }
 
 .empty-button:hover {
+    cursor: pointer;
     background-color: rgb(172, 73, 73);
     color: aliceblue;
 }
@@ -177,10 +178,11 @@ h2 {
     justify-content: space-between;
     align-items: center;
     font-size: 1.3em;
-    transition: 0.5s;
+    transition: 200ms;
 }
 
 .resume-payment-button button:hover {
+    cursor: pointer;
     background-color: rgb(172, 73, 73);
     color: aliceblue;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/juegosForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="icon" href="../asset/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
+    <title>Formulario Juegos | Game4</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="#">
+                    <img src="../asset/image/logo.png" width="38px">
+                </a>                    
+            </div>
+            <div class="nav-op">
+                <ul>
+                    <li><a href="./juegos.html">Juegos</a></li>
+                    <li><a href="./ofertas.html">ofertas</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="./static/login.html"><button>Iniciar sesion</button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Gestión de Productos</h1>
+        <div class="contenedorFormularios">
+            <div class="contenedorAñadir">
+                <h2>Añadir Juego</h2>
+                <form action="">
+                    <label for="">Nombre del Juego</label>
+                    <input type="text" id="nombreAñadir" name="nombreJuego">
+
+                    <label for="">Descripción del Juego</label>
+                    <input type="text" id="descripcionAñadir" name="descripcionJuego">
+
+                    <label for="">Precio del Juego</label>
+                    <input type="number" id="precioAñadir" name="valorJuego">
+
+                    <label for="">URL imagen del Juego</label>
+                    <input type="text" id="imagenAñadir" name="imagenJuego">
+
+                    <input class="boton" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+            <div class="contenedorEditar">
+                <h2>Editar Juego</h2>
+                <form action="">
+                    <label for="">Seleccione el Juego</label>
+                    <select id="juegoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label for="">Atributo del Juego</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+                    
+                    <label for="">Nuevo Valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="boton" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+            <div class="contenedorEliminar">
+                <h2>Eliminar Juego</h2>
+                <form action="">
+                    <label for="">Nombre del Juego</label>
+                    <select id="juegoEliminar">
+                        <option value="">---</option>
+                    </select>
+
+                    <input class="boton" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+        <div class="contenedorMensajeError">
+            <div id="mensaje"></div>
+        </div>
+        <div class="contenedorJuegos">
+            <h2>Todos los juegos</h2>
+            <div class="mostrarJuegos" id="mostrarJuegos">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-redes">
+            <h3>¡Seguinos en nuestras redes!</h3>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="footer-derechos">
+            <p align="center">© 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países. <br> Todos los precios incluyen IVA (donde sea aplicable).</p>
+        </div>
+    </footer>
+    <script src="../js/juegosForm.js"></script>
+</body>
+</html>
