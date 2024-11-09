@@ -32,62 +32,69 @@
             <div class="login">
                 <a href="./static/login.html"><button>Iniciar sesion</button></a>
             </div>
+            <div>
+                <img class="cartLogo" id="cartLogo" src="../asset/image/shopping-cart-solid.svg" alt="carrito">
+                <div id="cartNumber"></div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="heading">
-            <div class="heading-div">
-                <h2>Carrito</h2>
-                <p>3 items</p>
-            </div>
-            <button type="reset" class="empty-button">Vaciar Carrito</button>
-        </section>
-        <section class="resume">
-            <div class="resume-products">
-                <div class="product-card">
-                    <img src="../asset/image/sims4.jpg" alt="The Sims 4">
-                    <div>
-                        <h4 class="game-name">The Sims 4</h4>
-                        <h4 class="game-price">$1000</h4>
-                    </div>
-                    <i class="fas fa-times"></i>
+        <div id="cartContainer">
+            <section class="heading" id="cartInfo">
+                <div class="heading-div">
+                    <h2>Carrito</h2>
+                    <p>3 items</p>
                 </div>
-                <div class="product-card">
-                    <img src="../asset/image/counterstrike_global_offensive.webp" alt="Counter-Strike: Global Offensive">
-                    <div>
-                        <h4 class="game-name">Counter-Strike: Global Offensive</h4>
-                        <h4 class="game-price">$1000</h4>
+                <button type="reset" class="empty-button" id="empty-button">Vaciar Carrito</button>
+            </section>
+            <section class="resume">
+                <div class="resume-products" id="resume-products"> <!--productosCompra -->
+                    <div class="product-card">
+                        <img src="../asset/image/sims4.jpg" alt="The Sims 4">
+                        <div>
+                            <h4 class="game-name">The Sims 4</h4>
+                            <h4 class="game-price">$1000</h4>
+                        </div>
+                        <i class="fas fa-times"></i>
                     </div>
-                    <i class="fas fa-times"></i>
-                </div>
-                <div class="product-card">
-                    <img src="" alt="">
-                    <div>
-                        <h4 class="game-name">. .</h4>
-                        <h4 class="game-price">$1000</h4>
+                    <div class="product-card">
+                        <img src="../asset/image/counterstrike_global_offensive.webp" alt="Counter-Strike: Global Offensive">
+                        <div>
+                            <h4 class="game-name">Counter-Strike: Global Offensive</h4>
+                            <h4 class="game-price">$1000</h4>
+                        </div>
+                        <i class="fas fa-times"></i>
                     </div>
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-            <div class="resume-payment">
-                <h4>Resumen de compra</h4>
-                <div class="resume-payment-summary">
-                    <div>
-                        <p>Subtotal</p>
-                        <p>Impuestos</p>
-                        <h5>Total</h5>
-                    </div>
-                    <div>
-                        <p>$30.00</p>
-                        <p>$3.00</p>
-                        <h5>$33.00</h5>
+                    <div class="product-card">
+                        <img src="" alt="">
+                        <div>
+                            <h4 class="game-name">. .</h4>
+                            <h4 class="game-price">$1000</h4>
+                        </div>
+                        <i class="fas fa-times"></i>
                     </div>
                 </div>
-                <div class="resume-payment-button">
-                    <button type="submit">Ir a pagar...<i class="fas fa-arrow-right"></i></button>
+                <div class="resume-payment">
+                    <h4>Resumen de compra</h4>
+                    <div class="resume-payment-summary" id="cartSummary">
+                        <div>
+                            <p>Subtotal</p>
+                            <p>Impuestos</p>
+                            <h5>Total</h5>
+                        </div>
+                        <div>
+                            <p>$30.00</p>
+                            <p>$3.00</p>
+                            <h5>$33.00</h5>
+                        </div>
+                    </div>
+                    <div class="resume-payment-button">
+                        <button type="submit">Ir a pagar...<i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </main>
     <footer>
         <div class="footer-redes">
