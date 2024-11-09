@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\styles\detalle-juego-01.css">
+    <title>Inicio | Game4</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="#">
+                    <img src="../asset/image/logo.png" width="38px" alt="Game4 Logo">
+                </a>
+            </div>
+
+            <div class="nav-op">
+                <ul>
+                    <li><a href="../static/juegos.html">Juegos</a></li>
+                    <li><a href="../static/ofertas.html">Ofertas</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="../static/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="login">
+                <a href="./static/login.html">
+                    <button>Iniciar sesión</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Empieza el detalle -->
+    <main>
+        <div class="main-content">
+            <div class="container">
+                <div class="game-details">
+                    <div class="game-image">
+                        <button id="anterior"><</button>
+                        <img id="slider-image" src="../asset/image/imagen-1.jpg" alt="Call Of Duty MW3">
+                        <button id="posterior">></button>
+                    </div>
+
+                    <div class="game-info">
+                        <h2>Call Of Duty MW3</h2>
+                        <p class="description">
+                            Call of Duty es una saga de videojuegos tipo FPS cuyo propietario actual es Activision que
+                            actualmente cuenta con un total de 43 juegos para PS5, Xbox Series X/S, Xbox One, PS4, Wii
+                            U, PSVITA, Android, iPhone, NDS, PSP, PS3, Wii, Xbox 360, Xbox, GameCube, PS2, N-Gage y PC.
+                            Esta saga nació en 2003 de la mano de Infinity Ward que con su primera obra quiso crear un
+                            sucesor espiritual de Medal of Honor: Allied Assault ofreciendo desde ese momento una
+                            licencia de juegos de disparos de corte bélico ambientada en diferentes épocas históricas e
+                            incluso en el futuro, destacando habitualmente por campañas espectaculares y por modos
+                            multijugador adictivos en la mayoría de sus entregas.</p>
+                    </div>
+                </div>
+
+
+                <div class="button-container">
+                    <button id="openModal" class="button">¡Ver Trailer!</button>
+                </div>
+
+                <div id="videoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe class="video" src="https://www.youtube.com/embed/1xjCdN_rWCE"
+                            title="Call of Duty MW3 Trailer" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <h3>Requisitos del Sistema</h3>
+                <div class="requirements">
+                    <ul>
+                        <li><strong>Sistema Operativo:</strong> Windows 10 64-bit</li>
+                        <li><strong>Procesador:</strong> Intel Core i5-2500K / AMD Ryzen 5 1600X</li>
+                        <li><strong>Memoria:</strong> 12 GB de RAM</li>
+                        <li><strong>Gráfica:</strong> NVIDIA GeForce GTX 970 / AMD Radeon R9 390</li>
+                        <li><strong>DirectX:</strong> Versión 12</li>
+                        <li><strong>Almacenamiento:</strong> 70 GB de espacio disponible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="comments-container">
+                    <div class="comment">
+                        <img src="..\asset\image\usuario1.jpg" alt="Comentario 1">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario2.jpg" alt="Comentario 2">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario3.jpg" alt="Comentario 3">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario1.jpg" alt="Comentario 1">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario2.jpg" alt="Comentario 2">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario3.jpg" alt="Comentario 3">
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+
+    </div>
+    </main>
+
+    <!-- Footer común -->
+    <footer>
+        <div class="footer-redes">
+            <h3>¡Seguinos en nuestras redes!</h3>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="footer-derechos">
+            <p align="center">
+                © 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus
+                respectivos dueños en EE. UU. y otros países. Todos los precios incluyen IVA (donde sea aplicable).
+            </p>
+        </div>
+    </footer>
+    <script src="..\js\detalle.js"></script>
+</body>
+
+</html>

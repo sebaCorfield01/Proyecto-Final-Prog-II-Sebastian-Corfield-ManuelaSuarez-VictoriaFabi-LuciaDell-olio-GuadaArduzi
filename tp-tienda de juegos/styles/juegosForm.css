@@ -1,0 +1,263 @@
+* {
+    font-family:"DM Sans", sans-serif;
+    font-size: 20px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( to left,rgb(53, 4, 4), rgb(27, 13, 13));
+}
+
+/* NAV */
+.nav-header {
+    display:flex;
+    background-color: rgb(38, 19, 19, 0.5); /*0.9 baja opacidad*/
+    justify-content: flex-start;
+    position: sticky;
+}
+
+.logo img {
+  position: relative;
+  top: 15px;
+  padding-left: 25px;
+}
+
+header ul li {
+    position: relative ;
+    right: 9px;
+    list-style-type: none;
+    display: inline;
+    padding: 15px;
+}
+  
+header ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+}
+
+.nav-op a:hover { 
+    transition: 200ms;
+    color: rgb(118, 27, 27);
+}
+
+.login button {
+    font-family: "New Amsterdam", sans-serif;
+    position: relative;
+    top: 15px;
+    left: 760px;
+    font-size: 19px;
+    padding: 6px 20px;
+    border: 0px;
+    border-radius: 20px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 16, 16);
+}
+/* FIN NAV */
+
+main {
+    min-height: 100vh;
+    color: aliceblue;
+    margin: 2% 5%;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.contenedorFormularios {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contenedorFormularios>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2D4263;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+    color: rgb(213, 213, 213);
+    background-color: rgb(95, 16, 16);
+}
+
+h2 {
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedorFormularios>div>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contenedorFormularios>div>form>input, select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.contenedorFormularios .boton {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    transition: 200ms;
+}
+
+.contenedorFormularios .boton:hover {
+    cursor: pointer;
+    background-color: rgb(172, 73, 73);
+    color: aliceblue;
+}
+
+/* MENSAJE ERROR */
+.contenedorMensajeError{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.repetidoError,
+.realizado,
+.llenarCampos,
+.noExisteError {
+    margin: 15px 0px;
+}
+
+.repetidoError::after, 
+.realizado::after, 
+.llenarCampos::after, 
+.noExisteError {
+    background-color: red;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.realizado::after {
+    content: 'Realizado';
+    background-color: green;
+}
+
+.llenarCampos::after {
+    content: 'Compruebe que todos los campos estén llenos';
+}
+
+.repetidoError::after {
+    content: 'Ese elemento ya existe';
+}
+
+.noExisteError::after {
+    content: 'Ese elemento no existe';
+}
+/* FIN MENSAJE ERROR */
+
+/*TODOS LOS JUEGOS */
+.contenedorJuegos h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.mostrarJuegos {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.mostrarJuegos>div {
+    background-color: rgb(95, 16, 16);
+    border-radius: 20px;
+}
+
+.imgJuego {
+    border-radius: 20px 20px 0 0;
+}
+
+.informacion {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion>p {
+    margin: 0;
+}
+
+.informacion>p:first-child {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* FIN TODOS LOS JUEGOS */
+
+/* FOOTER */
+footer {
+    background-color: rgb(27, 13, 13, 0.7);
+    height: 100%;
+    max-height: 250px;
+    display: grid;
+}
+
+.footer-redes {
+    color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-redes h3 {
+    color: rgb(235, 235, 235);
+    font-family:"DM Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-redes i {
+    margin: 20px;
+    font-size: 23px;
+}
+
+.footer-derechos p {
+    border-top: 1px solid rgb(113, 92, 92);
+    border-bottom: 1px solid rgb(113, 92, 92);
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(113, 92, 92);
+    font-size: 15px;
+}
+/* FIN FOOTER */

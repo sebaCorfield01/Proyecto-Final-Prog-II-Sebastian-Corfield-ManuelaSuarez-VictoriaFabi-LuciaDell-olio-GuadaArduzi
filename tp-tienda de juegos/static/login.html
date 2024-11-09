@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/login.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../asset/image/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e725306775.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Login | Game4</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header">
+        <div class="logo">
+          <a href="#">
+            <img src="../asset/image/logo.png" width="38px" />
+          </a>
+        </div>
+        <div class="nav-op">
+          <ul>
+            <li><a href="./static/juegos.html">juegos</a></li>
+            <li><a href="./static/ofertas.html">ofertas</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="./static/contacto.html">contacto</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <a href="./static/login.html"><button>Iniciar sesión</button></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mb-3" id="container-form">
+        <form id="content-form">
+          <div class="d-flex justify-content-center">
+            <img
+              class="mb-4"
+              src="../asset/image/Icono4.png"
+              alt="login-icon"
+              style="height: 7rem"
+              id="image"
+            />
+          </div>
+          <h1 class="text-center mb-3" id="login">Login</h1>
+
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput" class="form-label">Correo Electrónico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="password"
+            />
+            <label for="floatingPassword" class="form-label">Password</label>
+          </div>
+
+          <div class="checkbox mb-3 text-center">
+            <label>
+              <div id="guardarPassword">
+                <input type="checkbox" value="remember-me" />
+                Guardar Contraseña
+              </div>
+            </label>
+          </div>
+
+          <button
+            class="btn btn-lg btn-outline-light w-100"
+            type="submit"
+            id="buttonInciarSesion"
+          >
+            Iniciar Sesión
+          </button>
+        </form>
+        <div id="errorMensaje" style="color: red"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-redes">
+        <h3>¡Síguenos en nuestras redes!</h3>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="footer-derechos">
+        <p style="text-align: center">
+          © 2024 Game4 Corporation. Todos los derechos reservados. Todas las
+          marcas registradas pertenecen a sus respectivos dueños en EE. UU. y
+          otros países. <br />
+          Todos los precios incluyen IVA (donde sea aplicable).
+        </p>
+      </div>
+    </footer>
+    <script src="../js/login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
