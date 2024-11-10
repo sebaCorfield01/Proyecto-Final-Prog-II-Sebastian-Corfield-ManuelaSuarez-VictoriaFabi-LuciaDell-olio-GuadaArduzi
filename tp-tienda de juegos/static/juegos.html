@@ -25,16 +25,16 @@
             </div>
             <ul id="ul-juegos">
                 <li class="li-juegos"><a href="../index.html" class="link-navegador">inicio</a></li>
-                <li class="li-juegos"><a href="#" class="link-navegador">juegos</a>
+                <li class="li-juegos"><a href="../static/juegos.html" class="link-navegador">juegos</a>
                 </li>
-                <li class="li-juegos"><a href="recomendaciones.html" class="link-navegador">recomendaciones</a></li>
-                <li class="li-juegos"><a href="oferta.html" class="link-navegador">oferta</a></li>
-                <li class="li-juegos"><a href="contacto.html" class="link-navegador">contacto</a></li>
+                <li class="li-juegos"><a href="../recomendaciones.html" class="link-navegador">recomendaciones</a></li>
+                <li class="li-juegos"><a href="../static/ofertas.html" class="link-navegador">oferta</a></li>
+                <li class="li-juegos"><a href="../static/contacto.html" class="link-navegador">contacto</a></li>
 
             </ul>
             <div class="login">
-                <a href="./static/login.html">
-                    <button>Iniciar sesion</button></a>
+                <a href="{{ url_for('registro') }}"><button>Registrarse</button></a>
+                <a href="./static/login.html"><button>Iniciar sesion</button></a>
             </div>
 
         </nav>
@@ -66,12 +66,14 @@
         <main>
             <div class="div-conteiner-juegos">
                 <div class="div-juegos" category="accion">
+                    <a href="../static/detalle-juego-01.html" class="info-button">Info</a>
                     <img src="https://assets.xboxservices.com/assets/71/b5/71b50f29-5799-4be1-97ef-d58d57c9fe37.jpg?n=CoD-Modern-Warfare-III_GLP-Page-Hero-0_1083x1222_02.jpg"
                         alt="" class="imagen-juegos">
                     <p class="p-juegos">Call Of Duty MW3</p>
                     <p class="p-juegos">$69.99 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
                 </div>
                 <div class="div-juegos" category="accion">
+                    <a href="../static/detalle-juego-02.html" class="info-button">Info</a>
                     <img src="https://i.blogs.es/dfbccc/trucosgtavps4/1366_2000.jpg" alt="" class="imagen-juegos">
                     <p class="p-juegos">GTA 5</p>
                     <p class="p-juegos">$14.80 <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></p>
