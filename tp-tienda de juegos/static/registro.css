@@ -1,0 +1,119 @@
+* {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 20px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
+    
+}
+.login button{
+    font-family: "New Amsterdam", sans-serif;
+    position: relative;
+    top: 15px;
+    left: 210px;
+    font-size: 19px;
+    padding: 6px 20px;
+    border: 0px;
+    border-radius: 20px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 16, 16);
+
+  }
+#logo img{
+    width: 38px;
+    position: relative;
+    top: 15px;
+    padding-left: 25px;
+}
+#nav-header {
+   display: flex;
+    background-color: rgb(38, 19, 19, 0.5);
+   justify-content: center;
+}
+
+#ul-juegos .li-juegos {
+    list-style-type: none;
+    display: inline;
+    
+    
+}
+i{
+    color: white;
+}
+i:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.link-navegador {
+    color: rgb(232, 232, 232);
+}
+
+.link-navegador:hover {
+    transition: 200ms;
+    color: rgb(118, 27, 27);
+}
+
+.li-juegos {
+    padding: 20px;
+    
+}
+
+i{
+    float: right;
+}
+
+
+#div-registro {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(239, 221, 221);
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease height 0.2s ease;
+    flex-direction: column;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(95, 16, 16);
+    color: white;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
