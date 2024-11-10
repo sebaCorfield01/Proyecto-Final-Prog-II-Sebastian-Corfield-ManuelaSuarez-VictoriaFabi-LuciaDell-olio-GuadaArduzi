@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="/tp-tienda de juegos/styles/index.css">
+    <!-- cambiar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,16 +18,15 @@
     <title>Inicio| Game4</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-header">
-
-        <div class="logo">
-            <a href="#">
-                 <img src=".\asset\image\logo.png" width="38px">
-            </a>                    
-        </div>
-
+<!-- inicio de container -->
+<div class="container">
+<nav>
         <div class="nav-op">
+            <div class="logo">
+                <a href="#">
+                     <img src="/tp-tienda de juegos/asset/image/logo.png" width="40vh">
+                </a>                    
+            </div>
             <ul>
             
                 <li><a href="./static/juegos.html">juegos</a></li>
@@ -40,54 +41,94 @@
                 <a href="./static/login.html">
                 <button>Iniciar sesion</button></a>
         </div>
-        </nav>
-    </header>
-    <main>
+</nav>
 
-        <div class="destacado">
-            <!-- <img src="/tp-tienda de juegos\asset\image\Designer (2).jpeg" width= "900px"> -->
+
+<main>
+<div class="container_main">
+    <div class="titulo">
+    <h1>Ultimo Lanzamiento</h1>
+    </div>
+    <section class="destacado"> 
         
-        <div class="titulo">
-            <h1>#Destacados</h1>
-        </div>
+        <!-- esta por orden no tanto por uso -->
 
-        <div class="carrusel">
-            <div class="arrow-izq"> < </div>
+        <div class="container-destc"> 
 
-            <div class="herodestc">
-
-                <div class="op1">
-                    <img src="../tp-tienda de juegos\asset\image\cs2.jpg" width= "700px">
-                </div>
-
-                <div class="op2">
-                    <img src="..\tp-tienda de juegos\asset\image\ln2.jpg" width="700px">
-                </div>
-
-                <div class="op3">
-                    <img src="../tp-tienda de juegos\asset\image\rocketleague.jpg " width="700px">
-                </div> 
+            <div id="pnghero">
+                <img src="/tp-tienda de juegos/asset/image/pngwing.com.png" width="80%">
             </div>
 
-            <div class="arrow-drc"> > </div>
+            <div class="info-juego">
 
+                <div class="logosh">
+                    <img src="/tp-tienda de juegos/asset/image/Silent_hill_2_Remake_logo.png" width="45%">
+                </div>
+
+                <div class="galeria-container">
+                    <iframe width="450" height="200" src="https://www.youtube-nocookie.com/embed/jb6GWxhR0M4?si=DfSiFMKq70GaYFGG&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="/tp-tienda de juegos/asset/image/img2.jpg" width="220" height="120">
+                    <img src="/tp-tienda de juegos/asset/image/img4.jpg" width="230" height="120">
+                </div>
+
+                <h1> Acerca del juego </h1>
+
+                <h4>Fecha de lanzamiento: 8 OCT 2024</h4>
+                <h4>Desarrollador: Bloober Team SA
+                <h4>Editor: KONAMI</h4>
+
+                <p>Tras recibir una carta de su mujer fallecida,
+                    James se dirige al lugar donde compartieron tantos recuerdos
+                    con la esperanza de verla una vez más: Silent Hill.
+                    Allí, junto al lago, encuentra a una inquietante mujer que se parece a ella...</p>
+                    
+                <p>"Me llamo... Maria", dice la mujer, sonriendo. Su rostro, su voz... Es igual que ella.</p>  
+                <p>Disfruta de una clase magistral de terror psicológico. Aclamada como la mejor entrega de la serie, descubre en el último hardware escalofriantes imágenes y un sonido visceral</p>
+                
+                <h4><a href="#">Ver requisitos de sistema</a></h4>
+                <div  class="boton-animado">
+                <button><a href="tp-tienda de juegos/static/juegos.html">
+                    Leer mas
+                </a></button>
+                </div>
+            </div>
+
+  
         </div>
+        
+    </section>
 
-        </div>
+        <!-- Sección de información sobre la compañía -->
+    <section id="nosotros">
+        <h1>Sobre G4 team</h1>
+        <p><i>De jugadores a emprendedores❤.</i></p>
+        <p> Somos un equipo de cinco personas, que aman los videojuegos,
+            nos criamos con ellos y los volvimos algo mas que eso. 
+            Por lo cual decidimos llevar nuestra pasion a otro nivel creando
+            una plataforma de distribución digital mundial que permite a los 
+            usuarios comprar, descargar e instalar videojuegos, software y 
+            otros contenidos digitales en sus computadoras.
+         </p>
+    </section>
 
-        <div id="nosotros">
+    <div class="titulo">
+        <h1>Integrantes</h1>
+    </div>
 
-            <h1>Sobre G4</h1>
-            <p><i>De jugadores a emprendedores</i></p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-            </p>
+    <div class="container-compas">
+        <p>Victoria Fabi</p>
+        <p>Guadalupe Arduzzi</p>
+        <p>Manuela Suarez Surraco</p>
+        <p>Lucia Dell Olio</p>
+        <p>Sebastian Corfield</p>
+    </div>
 
-        </div>
-    </main>
-    <footer>
+</div>
+</main>
 
+<footer>
+    <h3>¡Seguinos en nuestras redes!</h3>
         <div class="footer-redes">
-            <h3>¡Seguinos en nuestras redes!</h3>
             <i class="fa-brands fa-x-twitter"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -101,6 +142,8 @@
         </div>
 
 
-    </footer>
+</footer>
+<!-- fin del container -->
+</div>
 </body>
 </html>

@@ -1,171 +1,298 @@
 * {
     font-family:"DM Sans", sans-serif;
-    font-size: 20px;
-  }
-
-  html,
-  body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( to left,rgb(53, 4, 4), rgb(27, 13, 13));
+    box-sizing: border-box;
   }
 
+body{
+    background: linear-gradient( to left,rgb(53, 4, 4), rgb(10, 2, 2));  
 
-
-  /* NAV */
-  .nav-header {
-    display:flex;
-    background-color: rgb(38, 19, 19, 0.5); /*0.9 baja opacidad*/
-    justify-content: flex-start;
-    position: sticky;
-  }
-
-  .logo img{
-  position: relative;
-  top: 15px;
-  padding-left: 25px;
-
-  }
-
-   ul li {
-
-    position: relative ;
-    right: 9px;
-    list-style-type: none;
-    display: inline;
-    padding: 15px;
-  }
-  
-  a {
-    font-family: "New Amsterdam", sans-serif;
-    font-size: 23px;
-    text-decoration: none;
-    color: rgb(232, 232, 232);
-  }
-
-/*Aplica hover solo en las opciones(no al logo)*/
-
-  .nav-op a:hover { 
-    transition: 200ms;
-    color: rgb(118, 27, 27);
-  }
-
-  .login button{
-    font-family: "New Amsterdam", sans-serif;
-    position: relative;
-    top: 15px;
-    left: 760px;
-    font-size: 19px;
-    padding: 6px 20px;
-    border: 0px;
-    border-radius: 20px ;
-    color: rgb(255, 255, 255);
-    background-color: rgb(95, 16, 16);
-
-  }
-
-  /* .login a:hover{
-
-  } */
-
-  
-  
-  /* MAIN */
-  main{
-    min-height: 100vh;
-  }
-
-  .destacado{
-    margin: 130px;
-    background-color: rgba(24, 3, 3, 0.7);
-    padding: 50px ;
-    display: flex;
-    justify-content: center;
- 
-  }
-
-  .titulo h1{
-    font-size: 40px;
-    color: rgb(213, 213, 213);
-  }
-
-  .carrusel{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    height: 400px;
-
-  }
-
-
-  .arrow-izq{
-    font-size: 60px;
-    color: rgb(182, 182, 182);
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  .arrow-drc{
-    font-size: 60px;
-    color: rgb(182, 182, 182);
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-
-/* SOBRE NOSOTROS */
-  #nosotros{
-    margin: 130px;
-    padding: 40px;
-    width: 1000px;
-    height: 300px;
-    background-color: rgb(44, 34, 32);
-    }
-
-  h1{
-    font-size: 40px;
-    color: rgb(213, 213, 213);
-  }
-
-p{
-  color: aliceblue;
 }
 
-  /* FOOTER */
 
-  footer{
-    background-color: rgb(27, 13, 13, 0.7);
-    height: 100%;
-    max-height: 250px;
+/* container de la pagina */
+.container{
     display: grid;
+    grid-template-areas: 
+    'nav'
+    'main'
+    'footer';
 
-  }
+}
 
-  .footer-redes{
-    color: rgb(237, 237, 237);
+
+
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+    background-color: rgb(38, 19, 19, 0.9); /*0.9 baja opacidad*/
+
+    position: sticky; /* la nav se queda en el scroll */
+    top: 0;  /* Se mantendrá en la parte superior al hacer scroll */
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+    /* coloca la lista en linea y saca el estilo  */
+    .nav-op{
+        display: inline-flex;  
+        align-items: center;
+    }
+
+    .nav-op ul li{
+        list-style-type: none;
+        display: inline-flex;  
+        padding: 2vh;
+    }
+
+    .nav-op a{
+        font-size: 3.4vh;
+        font-family: "New Amsterdam", sans-serif;
+        text-decoration: none;
+        color: rgb(232, 232, 232);
+        transition: color 0.24s;
+    }
+
+    .nav-op a:hover { 
+        transition: 200ms;
+        color: rgb(118, 27, 27);
+    }
+
+    .logo{
+        padding: 1vh;
+    }
+
+
+    .login button{
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 2.7vh;
+        padding: 6px 20px;
+        /* pasar a responsive */
+        border: 0px;
+        border-radius: 20px ;
+        color: rgb(255, 255, 255);
+        background-color: rgb(95, 16, 16);
+        cursor: pointer; 
+    }
+
+
+
+
+
+main{
+    grid-area: main;
+
+}
+
+.container_main{
+    padding: 1%;
+}
+
+.titulo h1{
+color: rgb(39, 12, 12);
+font-size: 7vh;
+font-family: "New Amsterdam", sans-serif;
+letter-spacing: 4px;
+display: flex;
+justify-content: center;
+filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
+}
+
+
+.destacado{
+    background: linear-gradient( to left,rgb(53, 4, 4, 0.9), rgb(10, 2, 2, 0.9)), /* Color semitransparente */
+    url('/tp-tienda de juegos/asset/image/silenthill.jpg');
+    background-size: cover; 
+    padding: 3%;
+
+}
+
+    #pnghero img{ 
+        /* ilumina la imagen png */
+        filter: drop-shadow(0px 0px 12px rgb(85, 25, 25));
+    }
+
+    .logosh{
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+        .logosh img{
+            background-color: rgb(36, 9, 9);
+        }
+
+
+.container-destc{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+
+
+    .info-juego{
+
+        margin-right: 3%;
+        padding: 5%;
+        border-radius: 10%;
+        
+    }
+        .info-juego img{
+            display: flex;
+            justify-content: center;
+        }
+        .info-juego h1{
+            font-family: "New Amsterdam", sans-serif;
+            color: rgb(204, 204, 204);
+            font-size: 5vh;
+            padding: 1%;
+        }
+        .info-juego h4{
+            font-family:"DM Sans", sans-serif;
+            color: rgb(163, 8, 8);
+            font-size: 2vh;
+            padding: 1vh;
+        }
+
+        .info-juego p{
+            color: rgb(255, 255, 255);
+            padding: 3%;
+            background-color: rgb(37, 17, 17);
+            font-family:"DM Sans", sans-serif;
+            border: 0.4vh solid;
+            border-color:rgb(65, 7, 7, 0.6) ;
+        }
+        .info-juego a{
+            color: rgb(163, 8, 8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 2.2vh;
+        }
+            .info-juego a:hover{
+                color: rgb(143, 22, 22);
+            }
+
+        .boton-animado button{
+
+            padding: 6px 20px;
+            /* pasar a responsive */
+            border: 3px solid rgb(70, 0, 0);
+            border-radius: 10px ;
+            color: rgb(255, 255, 255);
+            background-color: rgb(92, 14, 14);
+            cursor: pointer; 
+        }
+
+        .boton-animado a{
+            font-family: "New Amsterdam", sans-serif;
+            color: rgb(209, 209, 209);
+            font-size: 2.8vh;
+            letter-spacing: 2px;
+        }
+        .boton-animado a:hover{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+
+        .galeria-container{
+            display:flex;
+            flex-wrap: wrap;  
+            padding: 4%;
+        }
+
+            .galeria-container iframe{
+            padding: 0.5%;
+            background-color: rgb(44, 7, 9);
+            }
+
+            .galeria-container img{
+            padding: 0.5%;
+            background-color: rgb(44, 7, 9);
+        }
+
+
+
+    /* SOBRE NOSOTROS */
+    #nosotros{
+        margin: 5vw auto;      /* Margen adaptable al ancho de la pantalla */
+        padding: 5%;           /* Padding adaptable al tamaño del contenedor */
+        max-width: 90vw;       /* Ancho máximo de 90% del ancho de la ventana */
+        width: 100%;           /* Ancho completo dentro del contenedor máximo */
+        height: auto;           /* Altura automática para ajustar el contenido */
+        background-color: rgb(51, 20, 14);
+
+        /* glow */
+        -webkit-box-shadow:0px 0px 22px 0px rgba(153,3,3,0.64);
+        -moz-box-shadow: 0px 0px 22px 0px rgba(153,3,3,0.64);
+        box-shadow: 0px 0px 22px 0px rgba(153,3,3,0.64);
+    }
+        #nosotros h1{
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 6vh;
+            color: rgb(213, 213, 213);
+        }
+
+        #nosotros h4{
+            color: rgb(196, 97, 97);
+        }
+
+        #nosotros p{
+        color: aliceblue;
+        }
+
+
+    .container-compas{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+    justify-content: space-around;
+    margin: 3%;
+    } 
 
-  i{
-    margin: 20px;
-    font-size: 23px;
-  }
-  h3{
-    color: rgb(235, 235, 235);
-    font-family:"DM Sans", sans-serif;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-  }
+    .container-compas p{
+        color: aliceblue;
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 3vh;
+    }
 
-  .footer-derechos p{
-    border-top: 1px solid rgb(113, 92, 92);
-    border-bottom: 1px solid rgb(113, 92, 92);
-    margin: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: rgb(113, 92, 92);
-    font-size: 15px;
-  } 
+
+        footer{
+            background-color: rgb(27, 13, 13, 0.7);
+            height: 100%;
+            max-height: 250px;
+            grid-area: footer;
+        
+        }
+
+        footer h3{
+            color: rgb(235, 235, 235);
+            font-family:"DM Sans", sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+          }
+        
+        
+          .footer-redes{
+            color: rgb(237, 237, 237);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+        
+          .footer-redes i{
+            margin: 20px;
+            font-size: 23px;
+          }
+          
+          .footer-derechos p{
+            border-top: 1px solid rgb(113, 92, 92);
+            border-bottom: 1px solid rgb(113, 92, 92);
+            margin: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: rgb(113, 92, 92);
+            font-size: 15px;
+          } 
