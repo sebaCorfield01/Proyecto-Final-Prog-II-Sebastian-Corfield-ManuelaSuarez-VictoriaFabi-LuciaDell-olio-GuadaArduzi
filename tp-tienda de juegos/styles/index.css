@@ -104,7 +104,7 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
 
 .destacado{
     background: linear-gradient( to left,rgb(53, 4, 4, 0.9), rgb(10, 2, 2, 0.9)), /* Color semitransparente */
-    url('/prueba/assets/silenthill.jpg');
+    url('/tp-tienda de juegos/asset/image/silenthill.jpg');
     background-size: cover; 
     padding: 3%;
 
