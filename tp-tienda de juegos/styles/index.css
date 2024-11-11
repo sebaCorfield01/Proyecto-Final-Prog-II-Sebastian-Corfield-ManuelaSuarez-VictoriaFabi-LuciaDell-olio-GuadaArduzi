@@ -6,7 +6,7 @@
   }
 
 body{
-    background: linear-gradient( to left,rgb(53, 4, 4), rgb(10, 2, 2));  
+    background: linear-gradient( to left,rgb(78, 5, 5), rgb(10, 2, 2));  
 
 }
 
@@ -19,6 +19,7 @@ body{
     'main'
     'footer';
 
+
 }
 
 
@@ -29,6 +30,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 1vh;
+     margin-left: 3%;
+    margin-right: 3%;
     background-color: rgb(38, 19, 19, 0.9); /*0.9 baja opacidad*/
 
     position: sticky; /* la nav se queda en el scroll */
@@ -84,6 +87,8 @@ nav{
 
 main{
     grid-area: main;
+    margin-left: 3%;
+    margin-right: 3%;
 
 }
 
@@ -107,6 +112,8 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
     url('/tp-tienda de juegos/asset/image/silenthill.jpg');
     background-size: cover; 
     padding: 3%;
+    margin: 2%;
+    border: 2vh solid rgb(63, 0, 0);
 
 }
 
@@ -219,6 +226,8 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
     /* SOBRE NOSOTROS */
     #nosotros{
         margin: 5vw auto;      /* Margen adaptable al ancho de la pantalla */
+        margin-top: 10%;
+        margin-bottom: 10%;
         padding: 5%;           /* Padding adaptable al tamaño del contenedor */
         max-width: 90vw;       /* Ancho máximo de 90% del ancho de la ventana */
         width: 100%;           /* Ancho completo dentro del contenedor máximo */
@@ -234,6 +243,7 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
             font-family: "New Amsterdam", sans-serif;
             font-size: 6vh;
             color: rgb(213, 213, 213);
+            padding: 1%;
         }
 
         #nosotros h4{
@@ -242,20 +252,33 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
 
         #nosotros p{
         color: aliceblue;
+        padding: 1%;
+        font-size: 2.5vh;
         }
 
 
     .container-compas{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    align-items: center;
     margin: 3%;
+    margin-top: 5%;
     } 
 
     .container-compas p{
         color: aliceblue;
         font-family: "New Amsterdam", sans-serif;
         font-size: 3vh;
+
     }
+        .container-compas img{
+            filter: drop-shadow(0px 0px 17px rgb(163, 61, 61));
+
+        }
+
+        .container-compas img:hover{
+            filter: drop-shadow(0px 0px 17px rgb(253, 7, 7));
+        }
 
 
         footer{
@@ -263,6 +286,8 @@ filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
             height: 100%;
             max-height: 250px;
             grid-area: footer;
+            padding: 3%;
+            margin-top: 10%;
         
         }
 
