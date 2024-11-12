@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +12,7 @@
     <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
     <title>Carrito | Game4</title>
 </head>
-<body>
+<body> 
     <header>
         <nav class="nav-header">
             <div class="logo">
@@ -30,7 +29,7 @@
                 </ul>
             </div>
             <div class="login">
-                <a href="./static/login.html"><button>Iniciar sesion</button></a>
+                <a href="./login.html"><button>Iniciar sesion</button></a>
             </div>
             <div>
                 <img class="cartLogo" id="cartLogo" src="../asset/image/shopping-cart-solid.svg" alt="carrito">
@@ -48,44 +47,44 @@
                 <button type="reset" class="empty-button" id="empty-button">Vaciar Carrito</button>
             </section>
             <section class="resume">
-                <div class="resume-products" id="resume-products"> <!--productosCompra -->
+                <div class="resume-products" id="resume-products">
                     <div class="product-card">
-                        <img src="../asset/image/sims4.jpg" alt="The Sims 4">
+                        <img src="../asset/image/sims4.jpg" alt="portada juego">
                         <div>
                             <h4 class="game-name">The Sims 4</h4>
                             <h4 class="game-price">$1000</h4>
                         </div>
-                        <i class="fas fa-times"></i>
+                        <button id="deleteProductButton"><i class="fas fa-times" id="iconoBorrar"></i></button>
                     </div>
                     <div class="product-card">
-                        <img src="../asset/image/counterstrike_global_offensive.webp" alt="Counter-Strike: Global Offensive">
+                        <img src="../asset/image/counterstrike_global_offensive.webp" alt="portada juego">
                         <div>
                             <h4 class="game-name">Counter-Strike: Global Offensive</h4>
                             <h4 class="game-price">$1000</h4>
                         </div>
-                        <i class="fas fa-times"></i>
+                        <button id="deleteProductButton"><i class="fas fa-times" id="iconoBorrar"></i></button>
                     </div>
                     <div class="product-card">
-                        <img src="" alt="">
+                        <img src="../asset/image/grand-theft-auto-v-201342141558_1.jpg" alt="portada juego">
                         <div>
-                            <h4 class="game-name">. .</h4>
+                            <h4 class="game-name">Grand Theft Auto V</h4>
                             <h4 class="game-price">$1000</h4>
                         </div>
-                        <i class="fas fa-times"></i>
+                        <button id="deleteProductButton"><i class="fas fa-times" id="iconoBorrar"></i></button>
                     </div>
                 </div>
                 <div class="resume-payment">
                     <h4>Resumen de compra</h4>
-                    <div class="resume-payment-summary" id="cartSummary">
+                    <div class="resume-payment-summary">
                         <div>
                             <p>Subtotal</p>
-                            <p>Impuestos</p>
+                            <p>Servicio</p>
                             <h5>Total</h5>
                         </div>
-                        <div>
-                            <p>$30.00</p>
-                            <p>$3.00</p>
-                            <h5>$33.00</h5>
+                        <div id="cartSummary">
+                            <p>$3000.00</p>
+                            <p>$300.00</p>
+                            <h5>$3300.00</h5>
                         </div>
                     </div>
                     <div class="resume-payment-button">
@@ -108,7 +107,6 @@
             <p align="center">© 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países. <br> Todos los precios incluyen IVA (donde sea aplicable).</p>
         </div>
     </footer>
+    <script src="../js/carrito.js"></script>
 </body>
-</html>
-
-    
+</html>    

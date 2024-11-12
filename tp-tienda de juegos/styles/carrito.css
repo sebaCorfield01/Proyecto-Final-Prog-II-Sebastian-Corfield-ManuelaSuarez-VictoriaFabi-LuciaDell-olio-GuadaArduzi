@@ -46,7 +46,6 @@ header ul li a {
 }
 
 .login button {
-    font-family: "New Amsterdam", sans-serif;
     position: relative;
     top: 15px;
     left: 760px;
@@ -56,6 +55,12 @@ header ul li a {
     border-radius: 20px ;
     color: rgb(255, 255, 255);
     background-color: rgb(95, 16, 16);
+    transition: 200ms;
+}
+
+.login button:hover {
+    cursor: pointer;
+    padding: 9px 23px;
 }
 /* FIN NAV */
 
@@ -126,11 +131,22 @@ h2 {
     flex-direction: column;
 }
 
+
+
+.product-card button {
+    background: none;
+    border: none;
+    color: aliceblue;
+    height: 15%;
+    margin: 1%;
+}
+
 .product-card i {
     transition: 0.5s;
 }
 
 .product-card i:hover {
+    cursor: pointer;
     color: rgb(172, 73, 73);
 }
 
@@ -143,6 +159,9 @@ h2 {
 }
 
 .resume-payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(95, 16, 16);
     border-radius: 6px;
     width: 33%;
@@ -175,7 +194,7 @@ h2 {
     border-radius: 6px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.3em;
     transition: 200ms;
@@ -225,3 +244,33 @@ footer {
     font-size: 15px;
 }
 /* FIN FOOTER */
+
+@media (max-width: 600px) {
+    .resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-products {
+        width: 90%;
+    }
+
+    .product-card div {
+        justify-content: space-between;
+        margin-left: 3%;
+    }
+
+    .game-name {
+        margin: 5% 0 0 0;
+    }
+
+    .game-price {
+        margin: 0 0 5% 0;
+    }
+
+    .resume-payment {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}
