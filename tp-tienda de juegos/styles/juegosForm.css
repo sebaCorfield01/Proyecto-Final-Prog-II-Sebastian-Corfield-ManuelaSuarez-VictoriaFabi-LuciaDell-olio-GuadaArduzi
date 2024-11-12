@@ -46,7 +46,6 @@ header ul li a {
 }
 
 .login button {
-    font-family: "New Amsterdam", sans-serif;
     position: relative;
     top: 15px;
     left: 760px;
@@ -56,6 +55,12 @@ header ul li a {
     border-radius: 20px ;
     color: rgb(255, 255, 255);
     background-color: rgb(95, 16, 16);
+    transition: 200ms;
+}
+
+.login button:hover {
+    cursor: pointer;
+    padding: 9px 23px;
 }
 /* FIN NAV */
 
@@ -195,7 +200,12 @@ h2 {
     border-radius: 20px;
 }
 
+.contenedorJuego {
+    width: 21%;
+}
+
 .imgJuego {
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -213,6 +223,7 @@ h2 {
 }
 
 .informacion>p:first-child {
+    text-align: center;
     font-size: 25px;
     font-weight: 300;
 }
@@ -261,3 +272,9 @@ footer {
     font-size: 15px;
 }
 /* FIN FOOTER */
+
+@media (max-width: 600px) {
+    .contenedorJuego {
+        width: 100%;
+    }
+}
