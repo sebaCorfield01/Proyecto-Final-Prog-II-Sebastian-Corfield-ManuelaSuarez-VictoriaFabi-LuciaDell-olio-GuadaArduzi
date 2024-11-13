@@ -257,9 +257,15 @@ footer {
     justify-content: center;
 }
 
-.footer-redes i {
+.footer-redes i{
     margin: 20px;
     font-size: 23px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.footer-redes i:hover {
+    color: rgb(118, 27, 27);
 }
 
 .footer-derechos p {
