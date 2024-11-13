@@ -43,6 +43,8 @@ header ul li a {
 .nav-op a:hover { 
     transition: 200ms;
     color: rgb(118, 27, 27);
+    filter: drop-shadow(0px 0px 12px rgb(0, 0, 0));
+    text-decoration: underline;
 }
 
 .login button {

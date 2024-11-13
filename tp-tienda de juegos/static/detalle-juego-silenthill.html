@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/e725306775.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\styles\detalle-juego-01.css">
+    <title>Inicio | Game4</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-op">
+                <div class="logo">
+                    <a href="#">
+                         <img src="/tp-tienda de juegos/asset/image/logo.png" width="40vh">
+                    </a>                    
+                </div>
+                <ul>
+                    <li><a href="/tp-tienda de juegos/index.html">Inicio</a></li>
+                    <li><a href="/tp-tienda de juegos/static/juegos.html">juegos</a></li>
+                    <li><a href="./static/contacto.html">contacto</a></li>
+    
+                </ul>
+            </div>  
+    
+            <div class="login">
+                <a href="./static/login.html">
+                <button>Iniciar sesion</button></a>
+                <a href="/tp-tienda de juegos/static/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+    </nav>
+    </header>
+
+    <!-- Empieza el detalle -->
+    <main>
+        <div class="main-content">
+            <div class="container">
+                <div class="game-details">
+                    <div class="game-image">
+                        <button id="anterior"><</button>
+                        <img id="slider-image" src="/tp-tienda de juegos/asset/image/silenthill.jpg" alt="Call Of Duty MW3">
+                        <button id="posterior">></button>
+                    </div>
+
+                    <div class="game-info">
+                        <h2>Silent HilL 2 Remake</h2>
+                        <p class="description">
+                            Silent Hill 2 Remake es una aventura de terror desarrollada por Bloober Team y publicada 
+                            por Konami para PlayStation 5 y PC. El mítico survival horror de 2001, considerado uno de 
+                            los mejores juegos de terror de todos los tiempos, regresa con un remake que actualiza 
+                            completamente los gráficos, renueva la jugabilidad con una nueva cámara y añade nuevos 
+                            contenidos, siendo el doble de extenso que el original..</p>
+                    </div>
+                </div>
+
+
+                <div class="button-container">
+                    <button id="openModal" class="button">¡Ver Trailer!</button>
+                </div>
+
+                <div id="videoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe class="video" src="https://www.youtube-nocookie.com/embed/jb6GWxhR0M4?si=DfSiFMKq70GaYFGG&amp;start=6"
+                            title="Call of Duty MW3 Trailer" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <h3>Requisitos del Sistema</h3>
+                <div class="requirements">
+                    <ul>
+                        <li><strong>Sistema Operativo:</strong> Windows 10 64-bit</li>
+                        <li><strong>Procesador:</strong> Intel Core i5-2500K / AMD Ryzen 5 1600X</li>
+                        <li><strong>Memoria:</strong> 12 GB de RAM</li>
+                        <li><strong>Gráfica:</strong> NVIDIA GeForce GTX 970 / AMD Radeon R9 390</li>
+                        <li><strong>DirectX:</strong> Versión 12</li>
+                        <li><strong>Almacenamiento:</strong> 70 GB de espacio disponible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="comments-container">
+                    <div class="comment">
+                        <img src="..\asset\image\usuario1.jpg" alt="Comentario 1">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario2.jpg" alt="Comentario 2">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario3.jpg" alt="Comentario 3">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario1.jpg" alt="Comentario 1">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario2.jpg" alt="Comentario 2">
+                    </div>
+                    <div class="comment">
+                        <img src="..\asset\image\usuario3.jpg" alt="Comentario 3">
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+
+    </div>
+    </main>
+
+    <!-- Footer común -->
+    <footer>
+        <div class="footer-redes">
+            <h3>¡Seguinos en nuestras redes!</h3>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="footer-derechos">
+            <p align="center">
+                © 2024 Game4 Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus
+                respectivos dueños en EE. UU. y otros países. Todos los precios incluyen IVA (donde sea aplicable).
+            </p>
+        </div>
+    </footer>
+    <script src="..\js\detalle3.js"></script>
+</body>
+
+</html>

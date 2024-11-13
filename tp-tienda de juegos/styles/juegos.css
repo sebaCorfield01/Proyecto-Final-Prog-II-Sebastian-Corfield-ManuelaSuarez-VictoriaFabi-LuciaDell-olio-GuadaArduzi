@@ -1,39 +1,83 @@
 * {
     font-family: "New Amsterdam", sans-serif;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(rgb(117, 30, 30), rgb(18, 9, 9));
+    background: linear-gradient( to left,rgb(78, 5, 5), rgb(10, 2, 2));  
 }
-.login button{
-    font-family: "New Amsterdam", sans-serif;
-    position: relative;
-    top: 15px;
-    left: 210px;
-    font-size: 19px;
-    padding: 6px 20px;
-    border: 0px;
-    border-radius: 20px ;
-    color: rgb(255, 255, 255);
-    background-color: rgb(95, 16, 16);
 
-  }
-#logo img{
-    width: 38px;
-    position: relative;
-    top: 15px;
-    padding-left: 25px;
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    background-color: rgb(38, 19, 19, 0.6); /*0.9 baja opacidad*/
 }
-#nav-header {
-   display: flex;
-    background-color: rgb(38, 19, 19, 0.5);
-   justify-content: center;
-}
+
+    /* coloca la lista en linea y saca el estilo  */
+    .nav-op{
+        display: inline-flex;  
+        align-items: center;
+    }
+
+    .nav-op ul li{
+        list-style-type: none;
+        display: inline-flex;  
+        padding: 2vh;
+    }
+
+    .nav-op a{
+        font-size: 3.4vh;
+        font-family: "New Amsterdam", sans-serif;
+        text-decoration: none;
+        color: rgb(232, 232, 232);
+        transition: color 0.24s;
+    }
+
+    .nav-op a:hover { 
+        transition: 200ms;
+        color: rgb(118, 27, 27);
+        filter: drop-shadow(0px 0px 12px rgb(0, 0, 0));
+        text-decoration: underline;
+    }
+
+    .logo{
+        padding: 1vh;
+    }
+
+    .login{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login i{
+        margin: 20px;
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .login button{
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 2.7vh;
+        padding: 6px 20px;
+        /* pasar a responsive */
+        border: 0px;
+        border-radius: 20px ;
+        color: rgb(255, 255, 255);
+        background-color: rgb(95, 16, 16);
+        cursor: pointer; 
+        display: inline-flex;
+    }
+
+
 
 #ul-juegos .li-juegos {
     list-style-type: none;
@@ -68,6 +112,19 @@ a{
 i{
     float: right;
 }
+
+
+.titulo h1{
+    color: rgb(39, 12, 12);
+    font-size: 10vh;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 12px rgb(255, 7, 7));
+}
+    
+
 .contenedor {
     display: flex;
     align-items: flex-start;
@@ -78,7 +135,6 @@ section {
     height: 700px;
     border-radius: 10px;
     background-color: rgb(90, 19, 19);
-   
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -95,10 +151,15 @@ section {
     justify-content: center;
     width: 90%;
     border:none ;
-    
 
 }
-button:hover{
+
+.generos button{
+    margin-left: 1vh; 
+    /* ajusta los botones mas centrados */
+}
+
+.generos button:hover{
     transition: 200ms;
     background-color: rgba(3, 3, 3, 0.5);
     cursor: pointer;
@@ -151,7 +212,6 @@ main {
 .div-juegos{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     margin-top: 20px;
     border-radius: 10px;
     width: 180px;
@@ -182,6 +242,11 @@ main {
     transition: background-color 0.3s;
 }
 
+.div-juegos a{
+    color: #ffffff;
+    letter-spacing: 1vh;
+}
+
 .info-button:hover {
     background-color: rgb(172, 73, 73);
 }
@@ -189,3 +254,43 @@ main {
     background-color: rgba(3, 3, 3, 0.5);
 }
 
+footer{
+    background-color: rgb(27, 13, 13, 0.7);
+    height: 100%;
+    max-height: 250px;
+    grid-area: footer;
+    padding: 3%;
+    margin-top: 10%;
+
+}
+
+footer h3{
+    color: rgb(235, 235, 235);
+    font-family:"DM Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .footer-redes{
+    color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-redes i{
+    margin: 20px;
+    font-size: 23px;
+  }
+  
+  .footer-derechos p{
+    border-top: 1px solid rgb(113, 92, 92);
+    border-bottom: 1px solid rgb(113, 92, 92);
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(113, 92, 92);
+    font-size: 15px;
+  } 
