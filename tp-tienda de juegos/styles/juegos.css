@@ -64,6 +64,7 @@ nav{
         margin: 20px;
         font-size: 23px;
         color: aliceblue;
+    
     }
     .login button{
         font-family: "New Amsterdam", sans-serif;
@@ -76,8 +77,9 @@ nav{
         background-color: rgb(95, 16, 16);
         cursor: pointer; 
         display: inline-flex;
+        
     }
-
+   
 
 
 #ul-juegos .li-juegos {
