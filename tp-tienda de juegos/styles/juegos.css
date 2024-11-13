@@ -64,7 +64,13 @@ nav{
         margin: 20px;
         font-size: 23px;
         color: aliceblue;
+        transition: 200ms;
     }
+
+    .login i:hover {
+        color: rgb(95, 16, 16);;
+    }
+
     .login button{
         font-family: "New Amsterdam", sans-serif;
         font-size: 2.7vh;
@@ -76,9 +82,13 @@ nav{
         background-color: rgb(95, 16, 16);
         cursor: pointer; 
         display: inline-flex;
+        transition: 200ms;
     }
 
-
+    .login button:hover {
+        cursor: pointer;
+        padding: 9px 23px;
+    }
 
 #ul-juegos .li-juegos {
     list-style-type: none;
@@ -228,6 +238,14 @@ main {
     width: 150px;
 }
 
+.p-juegos i {
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.p-juegos i:hover {
+    color: rgb(118, 27, 27);
+}
 
 /*Boton para info del juego */
 .info-button {
@@ -284,6 +302,12 @@ footer h3{
   .footer-redes i{
     margin: 20px;
     font-size: 23px;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .footer-redes i:hover {
+    color: rgb(118, 27, 27);
   }
   
   .footer-derechos p{
